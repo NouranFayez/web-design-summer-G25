@@ -1,0 +1,2 @@
+-- Elements (tags) ==> block Elements : h1:h6 , p , lists (ul , ol , dl) , table
+                       inline Elements : span , a , img 
