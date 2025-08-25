@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form autocomplete="off" method="post" action="thank.html">
+        <label for="firstName" >First Name</label>
+        <input type="text" autocomplete="off" id="firstName" placeholder="enter your first name" name="firstName">
+        <br>
+        <!-- <label>Last Name</label> -->
+        <input type="text" name="lastName" required placeholder="enter your last name">
+        <br>
+        <!-- <label>Age</label> -->
+        <input type="number" value="30" name="age">
+        <input type="number" readonly value="30" name="age">
+        <br>
+        <label>Email Address</label>
+        <input type="email" name="userEmail" autofocus>
+        <br>
+        <input type="password" placeholder="enter your password">
+        <br>
+        <label>gender</label>
+        <input type="radio" name="gender" value="male"><label>Male</label>
+        <input type="radio" name="gender" value="female"><label>Female</label>
+        <br>
+        <label>Tracks</label>
+        <input type="checkbox" name="tracks" value="fe"> <label>Frontend</label>
+        <input type="checkbox" name="tracks" value="be"> <label>Backend</label>
+        <input type="checkbox" name="tracks" value="mo"> <label>Mobile</label>
+        <input type="checkbox" name="tracks" value="nt"> <label>Network</label>
+        <br>
+        <select name="userCourse">
+            <option selected disabled>Choose your course</option>
+            <option>Html</option>
+            <option>css</option>
+            <option>js</option>
+            <option>Bootstrap</option>
+        </select>
+        <br>
+        <select name="userCourse2" multiple>
+            <option selected disabled>Choose your course</option>
+            <option value="0">Html</option>
+            <option value="1">css</option>
+            <option value="2">js</option>
+            <option value="3">Bootstrap</option>
+        </select>
+        <br>
+        <label>
+            Bio
+        </label>
+        <textarea name="userBio" rows="5" cols="30" placeholder="enter your bio"></textarea>
+        <br>
+        <input type="file" multiple>
+
+        <input type="range" name="range" min="200" max="300" value="200" step="50">
+
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+
+        <input type="color">
+
+        <input type="text" minlength="5" maxlength="14">
+        <br>
+        <label>Password with pattern</label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="please enter at least 1 uppercase , 1 lowercase , 1 number ">
+        <br>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"
+            title="Three letter country code">
+
+            <input type="url" placeholder="enter url" name="url">
+
+
+            <input type="submit" value="Login">
+            <input type="reset">
+        <button type="button">Register</button>
+        <button type="reset">Clear</button>
+
+    </form>
+
+</body>
+
+</html>
