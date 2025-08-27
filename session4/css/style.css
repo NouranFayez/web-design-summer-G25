@@ -41,3 +41,58 @@
 .text-center{
     text-align: center;
 }
+.bg-img{
+    background-image: url(../images/istockphoto-1317323736-612x612.jpg);
+    /* height: 600px; */
+        /* background-repeat: no-repeat; */
+    background-color: bisque;
+    /* padding-left: 11%; */
+    background-position-x: right;
+    background-position-y: center;
+    background-position: left bottom;
+    /* cover , contain */
+    background-size: 100% 100%;
+    color: white;
+    background-attachment: fixed;
+}
+.overlay{
+        background-color: #0000009a;
+    height: 100%;
+}
+
+.bg-white{
+    background-color: white;
+    color: black;
+}
+
+.bg-dark{
+    background-color: rgb(29, 29, 29);
+}
+
+ul{
+    list-style: none;
+}
+.display-inline-block{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    padding: 1% 0%;
+
+}
+
+nav ul {
+       margin-left: 69%;
+    width: 25%;
+}
+nav ul li {
+    margin-left: 3%;
+}
+
+.text-white{
+    color: white;
+}
