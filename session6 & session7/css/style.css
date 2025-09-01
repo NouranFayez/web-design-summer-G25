@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -33,6 +34,7 @@ a {
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify-content-between {
@@ -50,22 +52,24 @@ a {
 .bg-gold {
     background-color: goldenrod;
 }
-.btn-white{
+
+.btn-white {
     display: inline-block;
     padding: 1%;
     color: blue;
     background-color: white;
-     position: absolute;
+    position: absolute;
     left: 4%;
     top: 5%;
     z-index: 1;
 }
-.btn-white:hover{
+
+.btn-white:hover {
     background-color: blue;
     color: white;
 }
 
-.position-relative{
+.position-relative {
     position: relative;
 }
 
@@ -73,12 +77,12 @@ a {
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 nav {
     padding: 1% 0%;
-        position: sticky;
+    position: sticky;
     width: 100%;
     top: 0;
     background-color: black;
     color: white;
-        z-index: 9999;
+    z-index: 9999;
 }
 
 nav h1 {
@@ -139,19 +143,23 @@ nav ul {
 .custom-height {
     height: 500px;
 }
-.services-card{
+
+.services-card {
     width: 40%;
     box-shadow: 0px 0px 5px 2px rgb(174, 174, 174);
     margin-top: 4%;
 }
-.services-card img{
+
+.services-card img {
     width: 100%;
     display: block;
 }
-.services-card-body{
+
+.services-card-body {
     padding: 3%;
 }
-.card-overlay{
+
+.card-overlay {
     background-color: rgba(18, 18, 18, 0.705);
     position: absolute;
     top: 0;
@@ -163,12 +171,94 @@ nav ul {
     display: none;
 }
 
-.custom-flex{
-        flex-direction: column;
+.custom-flex {
+    flex-direction: column;
     justify-content: center;
 }
-.services-card:hover .card-overlay{
+
+.services-card:hover .card-overlay {
     display: flex;
+}
+
+.custom-card {
+    width: 35%;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px lightgray;
+    margin-top: 3%;
+    /* transition-duration: 5s; */
+    /* all */
+    /* transition-property: background ; */
+    /* ease , linear , eas-in , ease-out , ease-in-out */
+    /* transition-timing-function: ease; */
+    /* transition-delay: 2s; */
+    /* transition: 2s  width , 5s background; */
+    transition: 2s;
+}
+
+.custom-card:hover {
+    width: 70%;
+    background-color: black;
+    color: white;
+
+}
+
+.card-box {
+    background-color: white;
+    width: 30%;
+    box-shadow: 0px 0px 3px 2px lightgray;
+    padding: 2%;
+    /* display : none; */
+    /* 0 : 1 */
+    opacity: 0.5;
+    /* hidden , visible */
+    /* visibility: hidden; */
+}
+
+.card-box:hover {
+    opacity: 1;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.card-img img {
+    width: 100%;
+    /* filter: grayscale(0.5);  */
+    /* filter: contrast(2); */
+    /* filter: brightness(2); */
+    /* filter: blur(3px); */
+    filter: opacity(0.4);
+}
+
+.overflow-card {
+    width: 30%;
+    height: 100px;
+    padding: 2%;
+    background-color: white;
+    /* normal */
+    white-space: nowrap;
+    /* auto , hidden , visible */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-img-position{
+    width: 50%;
+    margin: 3% auto;
+}
+
+.card-img-position img{
+    width: 100%;
+}
+.custom-icon{
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    left: calc(50% - 37.5px);
+    top: calc(50% - 30px);
 }
 
 /* position ==> static (default) , fixed , sticky , relative , absolute  */
