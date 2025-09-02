@@ -1,0 +1,70 @@
+/* rule == > @media */
+/* type ==> screen , print , speetch  */
+/* condition ==> max-width , min-width , range  */
+
+
+/* 0 : 400 */
+/* @media (max-width : 400px){
+    .card{
+       background-color: teal;
+       color: white; 
+       width: 100%;
+    }
+
+} */
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+      .card{
+        width: 25%;
+    }
+}
+
+
+ /* 0 : 767.98 */
+ /* 420 */
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .card{
+        width: 48%;
+    }
+    .card img {
+        display: block;
+    }
+}
+
+/* 0 : 575.98  */
+/* 420 */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+      .card{
+       background-color: teal;
+       color: white; 
+       width: 100%;
+    }
+    .hidden-element{
+        display: none;
+    }
+ }
+
+
+@media (min-width: 900px){
+    .card{
+        background-color: lightblue;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px){
+    .card{
+       border: 5px solid blue;
+    }
+}
+
+
+@media print{
+    .hidden-print{
+        display: none;
+    }
+}
