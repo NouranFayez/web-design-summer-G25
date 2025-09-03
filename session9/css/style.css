@@ -1,0 +1,160 @@
+
+:root{
+    --light : rgb(226, 226, 226);
+    --dark-red : rgb(193, 24, 24);
+    --text-large : 40px;
+}
+/* reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+/* custom style */
+
+/* .card {
+    padding: 2%;
+    width: 30%;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+
+.card h2 {
+    color: blue;
+}
+
+.card h2:hover {
+    color: goldenrod;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px 4px lightgray;
+} */
+
+/* nested css selector */
+.card {
+    padding: 2%;
+    width: 30%;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+        outline: 3px solid red;
+
+    &:hover {
+        box-shadow: 0px 0px 5px 4px lightgray;
+    }
+    & h2{
+       color: blue;
+       &:hover{
+        color: goldenrod;
+       }  
+    }
+}
+
+.custom-card{
+    background-color: var(--light);
+}
+.custom-card:hover{
+    background-color: var(--dark-red);
+    color: white;
+}
+
+input[name]{
+    border: 3px solid blue;
+}
+input[name = userName]{
+    background-color: var(--light);
+}
+
+input[type=email]{
+    padding: 1%;
+    width: 50%;
+    display: block;
+    border: 0px;
+    margin:3% 0 ;
+    background-color: var(--light);
+    border-bottom: 2px solid var(--dark-red);
+}
+input[type=email]:focus{
+    outline: 0;
+    border-color: blue ;
+}
+
+input[type=checkbox]:checked{
+    width: 30px;
+    height: 30px;
+}
+
+a:visited{
+    color: var(--dark-red);
+}
+
+a:link{
+    color: goldenrod;
+    /* background-color: var(--light);
+    font-size: var(--text-large); */
+}
+
+
+li:first-child{
+    color: var(--dark-red);
+    font-size: var(--text-large);
+}
+li:last-child{
+    color: blue;
+}
+
+
+li:last-child span{
+    color: var(--dark-red);
+}
+
+li:first-child + li{
+    color: green;
+}
+
+.custom-card + form{
+    background-color: lightblue;
+}
+.custom-card ~ form{
+    padding: 2%;
+    border: 2px solid var(--dark-red);
+    margin: 2%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table , th , td{
+    border: 1px solid var(--dark-red);
+}
+th , td{
+    padding: 1%;
+}
+th{
+    background-color: teal;
+    color: white;
+}
+/* tr:nth-child(3) , tr:nth-child(5){
+    background-color: var(--light);
+} */
+ tr:nth-child(odd){
+    background-color: var(--light);
+ }
+
+ tr:nth-child(odd):hover{
+    background-color: goldenrod;
+    color: white;
+ }

@@ -84,11 +84,18 @@
     animation-name: changeBg;
     animation-duration: 4s;
     /* num , infinite */
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-direction: reverse;
     animation-direction: alternate;
     animation-direction: alternate-reverse;
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
+    /* linear , ease-in , ease-out , ease-in-out */
+    animation-timing-function: ease;
+
+    /* animation-fill-mode: ; */
+    /* animation: name duration 
+    timing-function delay iteration-count
+     direction fill-mode; */
 }
 
 @keyframes changeBg {
