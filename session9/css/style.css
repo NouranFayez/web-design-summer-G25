@@ -158,3 +158,49 @@ th{
     background-color: goldenrod;
     color: white;
  }
+
+
+ h2::first-line{
+    color: red;
+ }
+ h2::first-letter{
+    color: blue;
+    font-size: 35px;
+ }
+
+ ::selection{
+    background-color: goldenrod;
+    color: white;
+ }
+::placeholder{
+    color: teal;
+}
+
+h1{
+    background-color: var(--light);
+    padding: 2%;
+}
+
+h1::before{
+    content: "Web design";
+    background: lightblue;
+    border-right: 2px solid gold;
+    margin-right: 3%;
+    padding: 1%;
+    display: inline-block;
+}
+h1::after{
+     content: "";
+    background: #e2e2e2;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 12%;
+}
+
+h3::before{
+    content: "\f015";
+    font-family: "Font Awesome 7 Free";
+}
