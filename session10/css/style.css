@@ -1,0 +1,9 @@
+
+*{
+    /* direction: rtl; */
+}
+
+.bg-img{
+    background-image: url(../images/istockphoto-517188688-1024x1024.jpg);
+    height: 400px;
+}
