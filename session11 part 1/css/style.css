@@ -1,0 +1,12 @@
+.carousel-item img{
+    height: 500px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: maroon;
+    border: 2px solid;
+}
